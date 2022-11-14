@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mercury Tours Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Regression Suite(failed)">
+    <classes>
+      <class name="Mercury.LoginRegressionSuite">
+        <methods>
+          <include name="verifyValidLogin"/>
+          <include name="appClose"/>
+          <include name="appLaunch"/>
+          <include name="verifyInvalidLogin"/>
+        </methods>
+      </class> <!-- Mercury.LoginRegressionSuite -->
+    </classes>
+  </test> <!-- Login Regression Suite(failed) -->
+  <test thread-count="5" name="Flight Finder Regression Suite(failed)">
+    <classes>
+      <class name="Mercury.FlightFinderRegressionSuite">
+        <methods>
+          <include name="verifyDepartingFromValueSelection"/>
+          <include name="closeApp"/>
+          <include name="appLaunch"/>
+          <include name="verifyDefaultSelectionFlightType"/>
+        </methods>
+      </class> <!-- Mercury.FlightFinderRegressionSuite -->
+    </classes>
+  </test> <!-- Flight Finder Regression Suite(failed) -->
+</suite> <!-- Failed suite [Mercury Tours Regression Suite] -->
